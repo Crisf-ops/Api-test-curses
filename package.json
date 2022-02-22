@@ -1,0 +1,30 @@
+{
+  "name": "api-class-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-local": "./node_modules/.bin/mocha --env local --grep '@pre-req' --invert",
+    "test-local-smoke": "./node_modules/.bin/mocha --env local --grep '^(?=.*@smoke)(?!.*@pre-req).*'"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "authorize": "0.0.1",
+    "authorizenet": "^1.0.8",
+    "axios": "^0.26.0",
+    "babel-jest": "^27.5.1",
+    "jsdom": "^19.0.0",
+    "mocha": "^9.2.1",
+    "mocha-junit-reporter": "^2.0.2",
+    "mocha-multi": "^1.1.6",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "pg": "^8.7.3",
+    "puppeteer": "^13.3.2",
+    "supertest": "^6.2.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
